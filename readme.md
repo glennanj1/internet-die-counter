@@ -6,7 +6,7 @@ Thanks for visiting my repo. This is a bot to track the funny moments when someo
 
 Shout out to team pyrohm for the idea and inspiration. :pizza:
 
-<image href='https://media2.giphy.com/media/4ayiIWaq2VULC/giphy.gif?cid=ecf05e47brnkssz54g0y9i087sik4cy0j8w60ni2w8gn79mx&rid=giphy.gif&ct=g' alt='pizza giphy'>
+<img href='https://media2.giphy.com/media/4ayiIWaq2VULC/giphy.gif?cid=ecf05e47brnkssz54g0y9i087sik4cy0j8w60ni2w8gn79mx&rid=giphy.gif&ct=g' alt='pizza giphy' style="float: left; margin-right: 10px;" />
 
 # What Runs
 - Node JS
