@@ -4,10 +4,10 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-let namesArray = ["numair", "bassel-nader", "Charlesb", "Chris Dirkswager", "edwerner", "Ethan Wilson", "Internet Die Counter", "John Glennan", "jordan gaten", "JuliaWeakley", "Liam Hunt", "Matthew_Nicholson", "Mät", "nelsonmei", "Shahid", "veselin.georgiev", "Wayne", "wrembish", "pizza", "callthecapital"]
+let namesArray = ["alex", "zabian", "numair", "Chris", "Ethan", "Internet Die Counter", "John", "Julia", "Liam", "Matthew", "Mät", "Nelson", "Veselin", "Wayne", "wrembish", "pizza", "Tyler"]
 let names = namesArray.map(n => n.replace(/ /g, ""))
 console.log(names)
-let counter = []
+let counter = [{name: 'pizza', outage: 13}, {name: 'mät', outage: 9}, {name: 'wrembish', outage: 2}, {name: 'numair', outage: 14}, {name: 'zabian', outage: 1}, {name: 'alex', outage: 9}, {name: 'wayne', outage: 7}, {name: 'john', outage: 2}]
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
@@ -44,7 +44,7 @@ client.on("message", msg => {
 				msg.reply(`Current Toll for ${counter[i].name} : ${counter[i].outage}`)
 			}
 		}
-	} 
+	}
 })
 
 client.on('interactionCreate', async interaction => {
@@ -62,6 +62,8 @@ client.on('interactionCreate', async interaction => {
 	} else if (commandName === 'outage') {
 		await interaction.reply('out');
 		console.log(interaction)
+	} else if (commandName === 'botception') {
+		await interaction.reply('!emoji Hello Python bot, how are you today?')
 	}
 });
 
